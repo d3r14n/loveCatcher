@@ -286,8 +286,12 @@ function updateGameArea()
 			{
 				if(!scoreLock)
 				{
-					intervalBetween = intervalBetween - 10;
+					intervalBetween = intervalBetween - 15;
 					maxGravity = maxGravity + 2;
+					if (score % 20 == 0)
+					{
+						maxGravity = maxGravity - 4;
+					}
 					if (intervalBetween < 1)
 					{
 						intervalBetween = 1;
