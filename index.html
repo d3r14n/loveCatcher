@@ -11,8 +11,8 @@
 		<p>Game Over!</p>
 		<p>Click to Restart!</p>
 	</div>
-	<button id="leftBtn" onmousedown="moveLeft()" onmouseup="stopMove()" ontouchstart="moveLeft()"></button>
-	<button id="rightBtn" onmousedown="moveRight()" onmouseup="stopMove()" ontouchstart="moveRight()"></button>
+	<button id="leftBtn" ontouchstart="moveLeft()" ontouchend="stopMove()"></button>
+	<button id="rightBtn" ontouchstart="moveRight()" ontouchend="stopMove()"></button>
 	<!-- ◄ ► -->
 </body>
 </html>
