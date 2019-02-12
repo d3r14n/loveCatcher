@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Love Catcher. A Game for my beautiful GF</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="game.js"></script>
+	<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body onload="mainMenu()">
+	<div id="goBoard">
+		<p>Game Over!</p>
+		<p>Click to Restart!</p>
+	</div>
+	<button id="leftBtn" onmousedown="moveLeft()" onmouseup="stopMove()" ontouchstart="moveLeft()"></button>
+	<button id="rightBtn" onmousedown="moveRight()" onmouseup="stopMove()" ontouchstart="moveRight()"></button>
+	<!-- ◄ ► -->
+</body>
+</html>
